@@ -1,0 +1,156 @@
+.love__in {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 8rem;
+}
+.love__title {
+	text-align: center;
+	max-width: 68.4rem;
+}
+.love__coll_w {
+	width: 100%;
+	display: flex;
+
+	@include bp($point_2, min) {
+		justify-content: center;
+		column-gap: 5.4rem;
+	}
+
+	@include bp($point_3) {
+		flex-direction: column;
+		align-items: center;
+		row-gap: 3rem;
+	}
+}
+.love__coll {
+	&.love__coll--1 {
+		@include bp($point_2, min) {
+			width: 35rem;
+		}
+
+		@include bp($point_3) {
+			width: 100%;
+		}
+	}
+	&.love__coll--2 {
+		@include bp($point_2, min) {
+			width: 79.6rem;
+		}
+
+		@include bp($point_3) {
+			width: 100%;
+		}
+	}
+}
+.love__info {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 3rem;
+	background-color: $color_white_2;
+	padding: 7.6rem 3.2rem;
+	border-radius: 5rem;
+}
+.love__item {
+	display: flex;
+	align-items: center;
+	column-gap: 1.4rem;
+}
+.love__img_w {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	object-fit: contain;
+	width: 5.2rem;
+	height: 5.2rem;
+	border-radius: 50%;
+	background-color: $color_white;
+}
+.love__img {
+	display: block;
+	object-fit: contain;
+	width: 2rem;
+	height: 2rem;
+}
+.love__link {
+	text-decoration: none;
+	font-size: 2rem;
+	line-height: 3rem;
+	letter-spacing: 0.01em;
+	color: $color_descr;
+	&:hover {
+		color: $color_brown;
+	}
+}
+.love__socials {
+	display: flex;
+	align-items: center;
+	column-gap: 3.4rem;
+}
+.love__form {
+	width: 100%;
+	display: flex;
+
+	@include bp($point_2, min) {
+		flex-wrap: wrap;
+		column-gap: 4rem;
+		row-gap: 5rem;
+	}
+
+	@include bp($point_3) {
+		flex-direction: column;
+		align-items: center;
+		row-gap: 3rem;
+	}
+}
+.love__input {
+	height: 4.4rem;
+	border: none;
+	border-bottom: 1px solid #000000;
+	font-size: 2.2rem;
+	line-height: 4.4rem;
+	letter-spacing: 0.01em;
+	color: $color_black;
+
+	@include bp($point_2, min) {
+		width: calc((100% - 4rem) / 2);
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+	}
+
+	&::placeholder {
+		color: $color_descr;
+	}
+}
+.love__textarea {
+	width: 100%;
+	height: 17.4rem;
+	border: none;
+	border-bottom: 1px solid #000000;
+	font-size: 2.2rem;
+	line-height: 4.4rem;
+	letter-spacing: 0.01em;
+	color: $color_black;
+	&::placeholder {
+		color: $color_descr;
+	}
+}
+.love__btn {
+	@extend%btn_size_3;
+	@extend%btn_color_1;
+	@extend%btn_font;
+
+	@include bp($point_2, min) {
+		margin-left: auto;
+	}
+
+	@include bp($point_3) {
+		margin: 0 auto;
+	}
+}

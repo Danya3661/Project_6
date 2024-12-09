@@ -1,0 +1,183 @@
+.how {
+	padding-top: 0;
+	
+	@include bp($point_3) {
+	padding-bottom: 0;
+	}
+	
+}
+.how__in {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@include bp($point_3) {
+		padding: 0;
+	}
+}
+.how_block {
+	width: 100%;
+	background-color: $color_white_2;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	@include bp($point_2, min) {
+		padding: 14rem 11rem;
+		row-gap: 10rem;
+		border-radius: 7rem;
+	}
+
+	@include bp($point_3) {
+		padding: 10rem 3rem;
+		row-gap: 5rem;
+		border-radius: 0;
+	}
+}
+.how__info {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	@include bp($point_2, min) {
+		width: 80.2rem;
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+	}
+}
+.how__list {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	@include bp($point_2, min) {
+		row-gap: 7rem;
+	}
+
+	@include bp($point_3) {
+		row-gap: 5rem;
+	}
+}
+.how__item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	@include bp($point_2, min) {
+		justify-content: space-between;
+		column-gap: 3rem;
+	}
+
+	@include bp($point_3) {
+		flex-direction: column;
+		row-gap: 3rem;
+	}
+}
+.how__item:nth-child(even) {
+	@include bp($point_2, min) {
+		.how__item_coll--2 {
+			order: -1;
+		}
+	}
+}
+.how__item_coll {
+	&.how__item_coll--1 {
+		@include bp($point_2, min) {
+			width: 45.2rem;
+		}
+
+		@include bp($point_3) {
+			width: 100%;
+		}
+	}
+	&.how__item_coll--2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include bp($point_2, min) {
+			width: 45.6rem;
+		}
+
+		@include bp($point_3) {
+			width: 100%;
+		}
+	}
+}
+.how__img_w {
+	display: block;
+	object-fit: contain;
+
+	@include bp($point_2, min) {
+		width: 45.2rem;
+		height: 48.6rem;
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+		height: 100%;
+	}
+}
+.how__img {
+	@extend %contain_image;
+
+	@include bp($point_2, min) {
+		border-radius: 0 10rem 0 30rem;
+	}
+
+	@include bp($point_3) {
+		border-radius: 7rem;
+	}
+}
+.how__item_info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.how__number_w {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	
+	@include bp($point_2, min) {
+		margin-bottom: 6.2rem;
+	}
+	
+	@include bp($point_3) {
+		margin-bottom: 3rem;
+	}
+	
+	
+}
+.how__decor_w {
+	width: 9rem;
+	height: 9rem;
+	object-fit: contain;
+	display: block;
+}
+.how__decor {
+	@extend %contain_image;
+}
+.how__number {
+	font-family: $font_2;
+	font-size: 12rem;
+	line-height: 15rem;
+	color: $color_white;
+}
+.how__item_title {
+	font-family: $font_2;
+	font-size: 3.4rem;
+	line-height: 4.4rem;
+	color: $color_black_2;
+	margin-bottom: 1rem;
+}

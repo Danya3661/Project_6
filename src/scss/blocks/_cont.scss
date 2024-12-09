@@ -1,0 +1,42 @@
+.cont {
+	background-image: url(../imgs/cont/cont.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 35.6rem;
+	position: relative;
+}
+.cont__in {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cont_block {
+	position: absolute;
+	transform: translate(-50%, -100%);
+	top: 100%;
+	left: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $color_white;
+	padding: 4rem 0;
+	border-radius: 3.6rem 3.6rem 0 0;
+
+	@include bp($point_2, min) {
+		width: 50rem;
+	}
+
+	@include bp($point_3) {
+		width: 90%;
+	}
+}
+.cont__info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}

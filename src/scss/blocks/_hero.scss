@@ -1,0 +1,34 @@
+.hero {
+	min-height: 104.2rem;
+	width: 100%;
+	background-image: url(../imgs/hero/hero.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	background-attachment: fixed;
+	border-radius: 0 0 0 30rem;
+}
+.hero__in {
+	display: flex;
+	align-items: center;
+}
+.hero_info {
+	max-width: 56.8rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.hero__title {
+	margin-bottom: 1rem;
+}
+.hero__descr {
+	margin-bottom: 2rem;
+}
+.hero__btn {
+	@extend%btn_size_3;
+	@extend%btn_color_1;
+	@extend%btn_font;
+}
+

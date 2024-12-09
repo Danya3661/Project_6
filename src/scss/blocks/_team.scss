@@ -1,0 +1,130 @@
+.team {
+	background-color: $color_white_2;
+}
+.team__in {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 4rem;
+}
+.team__info {
+	max-width: 54.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.team__list {
+	width: 100%;
+	display: flex;
+
+	@include bp($point_2, min) {
+		flex-wrap: wrap;
+		column-gap: 2.2rem;
+	}
+
+	@include bp($point_3) {
+		flex-direction: column;
+		align-items: center;
+		row-gap: 3rem;
+	}
+}
+.team__item {
+	position: relative;
+
+	cursor: pointer;
+	&:hover {
+		.team__back_w {
+			display: block;
+		}
+	}
+
+	@include bp($point_2, min) {
+		width: calc((100% - 6.6rem) / 4);
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+	}
+}
+.team__img_w {
+	display: block;
+	object-fit: contain;
+	width: 100%;
+
+	@include bp($point_2, min) {
+		height: 43.2rem;
+	}
+
+	@include bp($point_3) {
+		height: 100%;
+	}
+}
+.team__img {
+	@extend %contain_image;
+	border-radius: 4rem;
+}
+.team__back_w {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: $color_white;
+	border-radius: 4rem;
+}
+.team__back {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 4rem;
+}
+.team__back_info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: $color_black_2;
+}
+.team__name {
+	font-family: $font_2;
+	font-size: 2.4rem;
+	line-height: 3.8rem;
+	letter-spacing: 0.01em;
+}
+.team__city {
+	font-size: 1.8rem;
+	line-height: 2.6rem;
+	letter-spacing: 0.01em;
+}
+.socials__sprite_card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 3.6rem;
+}
+.team__contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 1.8rem;
+	line-height: 2.6rem;
+	letter-spacing: 0.01em;
+}
+.team__number,
+.team__mail {
+	color: $color_descr;
+	text-decoration: none;
+	transition: all 0.5s ease-in-out;
+	&:hover {
+		color: $color_brown;
+	}
+}

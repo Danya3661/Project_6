@@ -1,0 +1,108 @@
+.follow__in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	@include bp($point_2, min) {
+		row-gap: 9.2rem;
+	}
+
+	@include bp($point_3) {
+		row-gap: 4rem;
+	}
+}
+.follow__info {
+	max-width: 73.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	row-gap: 0.8rem;
+}
+.follow__list {
+	width: 100%;
+	display: flex;
+
+	@include bp($point_2, min) {
+		flex-wrap: wrap;
+		column-gap: 10.4rem;
+		row-gap: 5.6rem;
+	}
+
+	@include bp($point_3) {
+		flex-direction: column;
+		row-gap: 3rem;
+	}
+}
+.follow__item {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 2.4rem;
+
+	@include bp($point_2, min) {
+		width: calc((100% - 10.4rem) / 2);
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+	}
+}
+.follow__img_w {
+	width: 100%;
+
+	display: block;
+	object-fit: contain;
+
+	@include bp($point_2, min) {
+		height: 54.8rem;
+	}
+
+	@include bp($point_3) {
+		height: 100%;
+	}
+}
+.follow__img {
+	@extend %contain_image;
+}
+.follow__item_down {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.follow__item_info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 0.4rem;
+}
+.follow__item_name {
+	font-family: $font_2;
+	font-size: 2.4rem;
+	line-height: 3rem;
+	letter-spacing: 0.02em;
+	color: $color_black_2;
+}
+.follow__item_img_w {
+	cursor: pointer;
+	width: 7rem;
+	height: 7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	object-fit: contain;
+	background-color: $color_white_2;
+	border-radius: 50%;
+	&:hover {
+		background-color: $color_brown;
+	}
+}
+.follow__item_img {
+	width: 0.8rem;
+	height: 1.8rem;
+	display: block;
+	object-fit: contain;
+}

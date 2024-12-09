@@ -1,0 +1,96 @@
+.we{
+	padding-top: 0;
+}
+
+.we__in {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	@include bp($point_2, min) {
+		row-gap: 14rem;
+	}
+
+	@include bp($point_3) {
+		row-gap: 7rem;
+	}
+}
+.we__row {
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	@include bp($point_2, min) {
+		column-gap: 5rem;
+		justify-content: space-between;
+	}
+
+	@include bp($point_3) {
+		flex-direction: column;
+		row-gap: 3rem;
+	}
+}
+.we__coll {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&.we__coll--1 {
+		@include bp($point_2, min) {
+			width: 50rem;
+		}
+
+		@include bp($point_3) {
+			width: 100%;
+		}
+	}
+	&.we__coll--2 {
+		@include bp($point_2, min) {
+			width: 65.8rem;
+		}
+
+		@include bp($point_3) {
+			width: 100%;
+		}
+	}
+
+	@include bp($point_2, min) {
+		&.we__coll--order {
+			order: -1;
+		}
+	}
+}
+.we__info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.we__title {
+	margin-bottom: 2.2rem;
+}
+.we__descr {
+	margin-bottom: 4rem;
+}
+.we__btn {
+	@extend%btn_size_3;
+	@extend%btn_color_1;
+	@extend%btn_font;
+}
+.we__img_w {
+	display: block;
+	object-fit: contain;
+	width: 100%;
+
+	@include bp($point_2, min) {
+		height: 37.6rem;
+	}
+
+	@include bp($point_3) {
+		height: 100%;
+	}
+}
+.we__img {
+	@extend %contain_image;
+	border-radius: 7rem;
+}

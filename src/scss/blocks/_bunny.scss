@@ -1,0 +1,70 @@
+.bunny__in {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bunny_block {
+	width: 87.6rem;
+	border-radius: 7rem;
+	border: 2.4rem solid $color_white_2;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	
+	@include bp($point_2, min) {
+		padding: 6.6rem 6.2rem;
+	}
+	
+	@include bp($point_3) {
+		padding: 3rem 3rem;
+	}
+	
+	
+}
+.bunny__under {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 49.8rem;
+	height: 49rem;
+	background-color: $color_white;
+	z-index: 1;
+
+}
+.bunny__info {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	z-index: 3;
+}
+.bunny__note {
+	font-family: $font_2;
+	font-size: 8.4rem;
+	font-style: italic;
+	line-height: 10.6rem;
+	letter-spacing: 0.02em;
+	color: $color_black_2;
+}
+.bunny__title {
+	font-family: $font_2;
+	font-size: 3.4rem;
+	font-style: italic;
+	line-height: 4.4rem;
+	letter-spacing: 0.02em;
+	color: $color_black_2;
+	margin-bottom: 3.2rem;
+}
+.bunny__descr {
+	font-size: 2.4rem;
+	line-height: 3.8rem;
+	letter-spacing: 0.01em;
+	color: $color_descr;
+	text-transform: uppercase;
+}

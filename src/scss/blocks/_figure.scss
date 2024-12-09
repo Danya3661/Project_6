@@ -1,0 +1,63 @@
+.figure {
+	background-color: $color_white_2;
+}
+.figure__in {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.figure__list {
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	@include bp($point_2, min) {
+		justify-content: center;
+		column-gap: 7.6rem;
+	}
+
+	@include bp($point_3) {
+		flex-direction: column;
+		row-gap: 3rem;
+	}
+}
+.figure__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	row-gap: 1.6rem;
+	padding-right: 7.6rem;
+	&:first-child {
+		@include bp($point_2, min) {
+			padding-right: 5.4rem;
+		}
+		
+		@include bp($point_3) {
+		border-top: none;
+		}
+		
+	}
+	&:last-child {
+		border-right: none;
+	}
+
+	@include bp($point_2, min) {
+		border-right: 1px solid $color_brown;
+	}
+
+	@include bp($point_3) {
+		border-top: 1px solid $color_brown;
+		padding: 0;
+		width: 70%;
+	}
+}
+.figure__text {
+	font-family: $font_2;
+	font-size: 8.4rem;
+	line-height: 10.6rem;
+	letter-spacing: 0.02em;
+	color: $color_brown;
+}

@@ -1,0 +1,192 @@
+@mixin st_btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	white-space: nowrap;
+
+	cursor: pointer;
+	text-decoration: none;
+}
+
+%btn_size_1 {
+	@include st_btn;
+	width: 25.2rem;
+	height: 7.4rem;
+	padding: 0 5.4rem;
+	border-radius: 1.8rem;
+	position: relative;
+	&::after {
+		
+		transition: all .5s ease-in-out;
+		
+		position: absolute;
+		content: '';
+		top: 42%;
+		left: 83%;
+		background-image: url(../imgs/hero/btn_arrow.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		width: 1.6rem;
+		height: 1.4rem;
+	}
+	&:hover{
+		&::after{
+			width: 4rem;
+		}
+	}
+}
+%btn_size_1_1 {
+	@include st_btn;
+	width: 25.2rem;
+	height: 7.4rem;
+	padding: 0 5.4rem;
+	border-radius: 1.8rem;
+	position: relative;
+	&::after {
+		
+		transition: all .5s ease-in-out;
+		
+		position: absolute;
+		content: '';
+		top: 42%;
+		left: 83%;
+		background-image: url(../imgs/hero/btn_arrow_2.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		width: 1.6rem;
+		height: 1.4rem;
+	}
+	&:hover{
+		&::after{
+			width: 4rem;
+		}
+	}
+}
+%btn_size_2 {
+	@include st_btn;
+	width: 28.6rem;
+	height: 7.4rem;
+	padding: 0 5.4rem;
+	border-radius: 1.8rem;
+}
+%btn_size_3 {
+	@include st_btn;
+	width: 22.4rem;
+	height: 7.4rem;
+	padding: 0 5.4rem;
+	border-radius: 1.8rem;
+	position: relative;
+	&::after {
+		
+		transition: all .5s ease-in-out;
+		
+		position: absolute;
+		content: '';
+		top: 40%;
+		left: 75%;
+		background-image: url(../imgs/hero/btn_arrow.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		width: 1.6rem;
+		height: 1.4rem;
+	}
+	&:hover{
+		&::after{
+			width: 5rem;
+		}
+	}
+	
+}
+%btn_size_3_1 {
+	@include st_btn;
+	width: 22.4rem;
+	height: 7.4rem;
+	padding: 0 5.4rem;
+	border-radius: 1.8rem;
+	position: relative;
+	&::after {
+		
+		transition: all .5s ease-in-out;
+		
+		position: absolute;
+		content: '';
+		top: 40%;
+		left: 75%;
+		background-image: url(../imgs/hero/btn_arrow_2.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		width: 1.6rem;
+		height: 1.4rem;
+	}
+	&:hover{
+		&::after{
+			width: 5rem;
+		}
+	}
+	
+}
+%btn_color_1 {
+	background-color: $color_black_2;
+	color: $color_white;
+	box-shadow: 0px 10px 20px 0px #c0c0c059;
+}
+%btn_color_2 {
+	background-color: $color_brown;
+	color: $color_white;
+	box-shadow: 0px 10px 20px 0px #c0c0c059;
+
+}
+%btn_font {
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 7.4rem;
+	letter-spacing: 0.02em;
+}
+// %btn_after_1{
+// 	position: relative;
+// 	&::after {
+		
+// 		transition: all .5s ease-in-out;
+		
+// 		position: absolute;
+// 		content: '';
+// 		top: 40%;
+// 		left: 75%;
+// 		background-image: url(../imgs/hero/btn_arrow.svg);
+// 		background-position: center;
+// 		background-repeat: no-repeat;
+// 		background-size: contain;
+
+// 		width: 1.6rem;
+// 		height: 1.4rem;
+// 	}
+// }
+// %btn_after_2{
+// 	position: relative;
+// 	&::after {
+		
+// 		transition: all .5s ease-in-out;
+		
+// 		position: absolute;
+// 		content: '';
+// 		top: 40%;
+// 		left: 75%;
+// 		background-image: url(../imgs/hero/btn_arrow_2.svg);
+// 		background-position: center;
+// 		background-repeat: no-repeat;
+// 		background-size: contain;
+
+// 		width: 1.6rem;
+// 		height: 1.4rem;
+// 	}
+// }

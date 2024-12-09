@@ -1,0 +1,52 @@
+.join {
+	padding-top: 0;
+}
+
+.join__in {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@include bp($point_3) {
+		padding: 0;
+	}
+}
+.join_block {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $color_black_2;
+	
+	padding: 8rem 0;
+	
+	@include bp($point_2, min) {
+	border-radius: 7rem;
+	}
+	
+	@include bp($point_3) {
+	border-radius: 0;
+	}
+	
+	
+}
+.join__info {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.join__title {
+	margin-bottom: 1rem;
+}
+.join__descr {
+	margin-bottom: 3.2rem;
+}
+.join__btn {
+	@extend%btn_size_1_1;
+	@extend%btn_color_2;
+	@extend%btn_font;
+}

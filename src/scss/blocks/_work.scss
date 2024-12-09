@@ -1,0 +1,85 @@
+
+.work{
+	padding-bottom: 0;
+}
+
+.work__in {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.work_list {
+	width: 100%;
+	display: flex;
+
+	@include bp($point_2, min) {
+		flex-wrap: wrap;
+		column-gap: 4.2rem;
+	}
+
+	@include bp($point_3) {
+		flex-direction: column;
+		row-gap: 3rem;
+	}
+}
+.work__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+	@include bp($point_2, min) {
+		width: calc((100% - 8.4rem) / 3);
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+	}
+}
+.work__title {
+	font-family: $font_2;
+	font-size: 2.4rem;
+	line-height: 3rem;
+	color: $color_black_2;
+	margin-bottom: 2rem;
+}
+.work__descr {
+	@include bp($point_2, min) {
+		margin-bottom: 5.2rem;
+	}
+
+	@include bp($point_3) {
+		margin-bottom: 2rem;
+	}
+}
+.work__link_w {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 1.2rem;
+	&:hover {
+		.work__link {
+			text-decoration: underline;
+		}
+	}
+}
+.work__link {
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 2.2rem;
+	letter-spacing: 0.02em;
+	color: $color_descr;
+	text-decoration: none;
+}
+.work__arrow_w {
+	cursor: pointer;
+	display: block;
+	object-fit: contain;
+	width: 1.6rem;
+	height: 1.4rem;
+}
+.work__arrow {
+	@extend %contain_image;
+}
